@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'satoshi';
+  src: url(../font/Satoshi-Variable.ttf);
+  font-weight: 700;
+}
+
+body {
+  background: #111;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Satoshi';
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.kamoNav .navbar {
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff21;
+}
+
+.kamoNav ul li {
+  margin-left: 20px;
+}
+
+.kamoNav ul li .nav-link {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.kamoNav ul li .nav-link img {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.kamoNav ul .d-flex {
+  border: 1px solid #ffffff21;
+  padding: 0 20px;
+  border-radius: 7px;
+}
+
+.kamoNav ul .bal-area {
+  padding: 10px 0 0;
+  font-size: 13px;
+  color: #fff;
+}
+
+.kamoNav ul .bal-area span img {
+  padding-right: 10px;
+}
+
+.kamoNav ul .log-btn {
+  font-family: 'Satoshi';
+  margin: 15px 0px 15px 20px;
+  font-weight: 900;
+  padding: 5px 50px;
+  border: 1px solid #F43883;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F43883;
+}
+
+.kamo-title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.kamo-title span {
+  color: #F43883;
+}
+
+.kamo-title .title-tx {
+  font-family: 'Satoshi';
+  font-weight: 700;
+}
+
+.kamo-title .title-tx h4 {
+  font-size: 22px;
+  padding-bottom: 6px;
+  color: #fff;
+}
+
+.kamo-title .title-tx p {
+  color: #ffffff7a;
+}
+
+.kamo-title .title-tx p a {
+  color: #F43883;
+}
+
+.deposit-content {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.deposit-content .deposit {
+  color: #fff;
+  padding: 20px;
+  width: 390px;
+  margin: 0 auto;
+  background: #ffffff10;
+  border-radius: 10px;
+}
+
+.deposit-content .deposit .nav-tabs {
+  border-bottom: 1px solid #ffffff21;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.deposit-content .deposit .nav-tabs .nav-item button {
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  color: #ffffff30;
+}
+
+.deposit-content .deposit .nav-tabs .nav-link {
+  padding: 10px 56px;
+  color: #fff;
+  background: none;
+  border: 0;
+}
+
+.deposit-content .deposit .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.deposit-content .deposit .tab-content .title {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.deposit-content .deposit .tab-content .title span {
+  margin-left: auto;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .from-input {
+  position: relative;
+  background: #ffffff1a;
+  height: 50px;
+  border: 1px solid #ffffff2e;
+  border-radius: 5px;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .from-input input {
+  background: #ffffff1f;
+  color: #fff;
+  width: 100%;
+  font-family: 'Satoshi';
+  font-weight: 500;
+  font-size: 15px;
+  border: 0;
+  height: 100%;
+  padding: 15px;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .from-input .kda-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: #d9d9d91a;
+  color: #fff;
+  border: 1px solid #ffffff2e;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .from-input .max-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #d9d9d91a;
+  border: 0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: #ffffff99;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .address-from span {
+  border-bottom: 1px solid;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .address-from .submit-btn {
+  width: 100%;
+  border: 0;
+  height: 50px;
+  background: #f43883;
+  color: #fff;
+  font-family: 'Satoshi';
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .address-from hr {
+  margin: 25px 0;
+}
+
+.deposit-content .deposit .tab-content .cash-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.deposit-content .deposit .tab-content .cash-btn button {
+  margin: 5px;
+  padding: 8px 13px;
+  background: #ffffff10;
+  border: 1px solid #ffffff21;
+  border-radius: 5px;
+  font-family: 'Satoshi';
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff70;
+}
+
+.footer-area {
+  padding: 50px 0 30px;
+  line-height: 40px;
+}
+
+.footer-area .copy-right {
+  color: #fff;
+}
+
+.footer-area .copy-right p {
+  font-size: 14px;
+  color: #ffffff6a;
+}
+
+.footer-area .social-icon {
+  margin-left: auto !important;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-area .social-icon li {
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  background: #55ACEE;
+  text-align: center;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */

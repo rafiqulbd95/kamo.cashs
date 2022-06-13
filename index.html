@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kemo.cash</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="kamoNav">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <div class="justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/img/docs.png" alt="docs">
+                                    Docs
+                                </a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <div class="bal-area">
+                                    <p>Your Balance</p>
+                                    <span><img src="assets/img/k.png" alt="kamo"> 23.4 KDA</span>
+                                </div>
+                                <a href="#" class="log-btn">Login</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <section class="kamo-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 ">
+                    <div class="title-tx">
+                        <h4>Deposit & Anonymize Funds, Earn KAMO Rewards,<br> And Chance To Win <span>$2,723</span></h4>
+                        <p>Powered by <a href="#">Kamo.Cash</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="deposit-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="deposit">
+                        <ul class="nav nav-tabs" id="deposit-tab">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="deposit-tab" data-bs-toggle="tab" data-bs-target="#deposit" type="button"  aria-selected="true">Deposit</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="withdraw-tab" data-bs-toggle="tab" data-bs-target="#withdraw" type="button" role="tab" aria-controls="profile" aria-selected="false">Withdraw</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="depositTabContent">
+                            <div class="tab-pane fade show active" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
+                                <div class="title">Deposit Amount <span>137  KDA</span></div>
+                                <div class="deposit-from">
+                                    <div class="from-input d-flex">
+                                        <button class="kda-btn">
+                                            <img src="assets/img/k.png" alt="">
+                                            kda
+                                        </button>
+                                        <input type="text" id="dopMax" value="273">
+                                        <button class="max-btn" onclick="depositMax()">Max</button>
+                                    </div>
+                                    <div class="address-from">
+                                        <div class="title">recipient address</div>
+                                        <div class="from-input">
+                                            <input type="text" value="">
+                                        </div>
+                                        <hr></hr>
+                                        <button type="submit" class="submit-btn">Deposit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="withdraw" role="tabpanel" aria-labelledby="withdraw-tab">
+                                <div class="title">kda to withdraw</div>
+                                <div class="cash-btn">
+                                    <button onclick="withdrawMax(10)" type="button">10 KDA</button>
+                                    <button onclick="withdrawMax(100)" type="button">100 KDA</button>
+                                    <button onclick="withdrawMax(280)" type="button">250 KDA</button>
+                                    <button onclick="withdrawMax(500)" type="button">500 KDA</button>
+                                </div>
+                                <div class="title">kda to receive <span>0.3% fee</span></div>
+                                <div class="deposit-from">
+                                    <div class="from-input d-flex">
+                                        <button class="kda-btn">
+                                            <img src="assets/img/k.png" alt="">
+                                            kda
+                                        </button>
+                                        <input type="text" id="withMax" value="273">
+                                        <button class="max-btn" onclick="withdrawMax(500)">Max</button>
+                                    </div>
+                                    <div class="address-from">
+                                        <div class="title">recipient address</div>
+                                        <div class="from-input">
+                                            <input type="text" value="">
+                                        </div>
+                                        <hr></hr>
+                                        <button type="submit" class="submit-btn">Deposit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="footer-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="copy-right d-flex">
+                        <p>&copy; Kamo.Cash 2022</p>
+                    <ul class="social-icon d-flex">
+                        <li><a href="#"><img src="assets/img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="assets/img/tel.png" alt="tel"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function depositMax(){
+            document.getElementById('dopMax').value = 137;
+        }
+        function withdrawMax(countid){
+            document.getElementById('withMax').value = countid;
+        }
+    </script>
+</body>
+</html>
