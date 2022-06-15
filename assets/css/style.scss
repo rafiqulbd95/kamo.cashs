@@ -21,6 +21,16 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 0;
 }
 
+h1{
+    font-size: 37px;
+    font-weight: 500;
+    padding: 30px 0;
+    color: #F43883;
+}
+h2{
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 .kamoNav{
@@ -28,11 +38,23 @@ h1,h2,h3,h4,h5,h6,p{
     .navbar{
         padding: 10px 0;
         border-bottom: 1px solid #ffffff21;
-
+        justify-content: space-between !important;
     }
 
     
     ul{
+
+        .nav-item{
+            border: 1px solid #ffffff21;
+            padding: 10px 20px;
+            border-radius: 7px;
+            align-items: center;
+
+            &:nth-child(1){
+                border: none;
+                padding: 0;
+            }
+        }
         li{
             margin-left: 20px;
 
@@ -46,44 +68,157 @@ h1,h2,h3,h4,h5,h6,p{
                 }
             }
         }
-       .d-flex{
-        border: 1px solid #ffffff21;
-        padding: 0 20px;
-        border-radius: 7px;
-       }
+       
+       
+       
 
        .bal-area{
-        padding: 10px 0 0;
-        font-size: 13px;
-        color: #fff;
+            padding: 10px 0 0;
+            font-size: 13px;
+            color: #fff;
 
             span img{
-                padding-right: 10px;
+                width: 22px;
+                height: 22px;
+                border-radius: 100%;
+                margin-right: 5px;
             }
        }
 
-        .log-btn{
+       .log-btn {
             font-family: 'Satoshi';
-            margin: 15px 0px 15px 20px;
             font-weight: 900;
-            padding: 5px 50px;
+            padding: 8px 0;
             border: 1px solid #F43883;
-            border-radius: 10px;
+            border-radius: 5px;
             text-decoration: none;
             color: #F43883;
-
+            width: 120px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            margin-left: 20px;
         }
     }
     
     
 }
 
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+    .logo img {
+        height: 34px;
+    }
+
+    .log-btn {
+        margin-left: 20px !important;
+        width: 50px !important;
+        padding: 5px !important;
+        font-size: 11px !important;
+    }
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+
+    .kamoNav .nav-item {
+        padding: 10px 14px !important;
+        margin-left: 0px !important;
+    }
+
+    .kamoNav ul {
+        padding: 0;
+    }
+    
+    .kamoNav ul .bal-area {
+        font-size: 11px;
+        padding: 0 !important;
+
+        li {
+            margin-left: 0px !important;
+        }
+    }
+
+    br{
+        display: none;
+    }
+    .cash-btn {
+
+        button{
+            font-size: 11px !important;
+
+        }
+    }
+
+    .deposit-content {
+        padding: 0 !important;
+    }
+    
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    .mobile{
+        display: none;
+    }
+
+    br{
+        display: none;
+    }
+    
+    .bal-area{
+            padding: 10px 0 ;
+            line-height: 20px;
+        p{
+            font-size: 11px;
+        }
+    }
+
+    .deposit-grid{
+        grid-template-columns: 1fr !important;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    .navbar-nav{
+        flex-direction: row !important;
+    }
+
+    .bal-area{
+        padding: 5px 10px !important;
+        
+        p{
+            font-size: 11px;
+        }
+    }
+    
+}
+
+
+
+
 .kamo-title{
     padding-top: 30px;
     text-align: center;
 
+    .title-prize{
+        color: #FFFFFF99;
+        padding-top: 10px;
+    }
+
     span{
         color: #F43883;
+    }
+
+    strong{
+        color: #fff;
     }
 
     .title-tx{
@@ -110,11 +245,15 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 20px;
     padding: 20px;
 
+    .deposit-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
     .deposit{
         color: #fff;
         padding: 20px;
-        width: 390px;
-        margin: 0 auto;
         background: #ffffff10;
         border-radius: 10px;
 
@@ -130,6 +269,7 @@ h1,h2,h3,h4,h5,h6,p{
             justify-items: center;
 
             .nav-item{
+                width: 100%;
                 
 
                 button{
@@ -142,7 +282,6 @@ h1,h2,h3,h4,h5,h6,p{
             }
 
             .nav-link{
-                padding: 10px 56px;
                 color: #fff;
                 background: none;
                 border: 0;
@@ -155,6 +294,17 @@ h1,h2,h3,h4,h5,h6,p{
         }
 
         .tab-content{
+
+            #withdraw{
+
+                .title{
+                    padding-top: 10px;
+                }
+
+                hr{
+                    margin: 15px 0;
+                }
+            }
 
             .title{
                 padding-top: 25px;
@@ -175,7 +325,7 @@ h1,h2,h3,h4,h5,h6,p{
                 .from-input{
                     position: relative;
                     background: #ffffff1a;
-                    height: 50px;
+                    height: 42px;
                     border: 1px solid #ffffff2e;
                     border-radius: 5px;
 
@@ -207,6 +357,12 @@ h1,h2,h3,h4,h5,h6,p{
                         background: #d9d9d91a;
                         color: #fff;
                         border: 1px solid #ffffff2e;
+
+                        img{
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 100%;
+                        }
                     }
 
                     .max-btn{
@@ -256,16 +412,21 @@ h1,h2,h3,h4,h5,h6,p{
                 margin: 0;
                 padding: 0;
                 
-                button{
+                button {
                     margin: 5px;
-                    padding: 8px 13px;
                     background: #ffffff10;
                     border: 1px solid #ffffff21;
                     border-radius: 5px;
                     font-family: 'Satoshi';
-                        font-weight: 700;
-                        font-size: 12px;
-                        color: #ffffff70;
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #ffffff70;
+                    width: 65px;
+                    height: 35px;
+                }
+                .active{
+                    color: #fff;
+                    border: 1px solid #fff;
                 }
             }
         }
@@ -303,6 +464,63 @@ h1,h2,h3,h4,h5,h6,p{
             background: #55ACEE;
             text-align: center;
             border-radius: 50px;
+        }
+    }
+}
+
+
+
+.deposit-prize{
+    color: #fff;
+    background: #ffffff10;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0;
+    align-items: center;
+
+
+    
+    .prize{
+
+        
+
+        .prize-btn{
+            background: #D9D9D933;
+            border: 0;
+            padding: 0 10px;
+            border-radius: 5px;
+            color: #fff;
+         }
+    }
+    
+}
+
+.total-area{
+
+
+    .total-prizes{
+        color: #fff;
+        padding: 20px;
+        margin: 0 auto;
+        background: #ffffff10;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 20px;
+
+        .hr{
+            margin: 30px 0; 
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        .count{
+            font-family: 'Satoshi';
+            font-weight: 700;
+            padding-top: 20px;
+            font-size: 32px;
+            color: #f43883;
         }
     }
 }

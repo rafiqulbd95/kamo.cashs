@@ -20,9 +20,38 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
 }
 
+h1 {
+  font-size: 37px;
+  font-weight: 500;
+  padding: 30px 0;
+  color: #F43883;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .kamoNav .navbar {
   padding: 10px 0;
   border-bottom: 1px solid #ffffff21;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.kamoNav ul .nav-item {
+  border: 1px solid #ffffff21;
+  padding: 10px 20px;
+  border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kamoNav ul .nav-item:nth-child(1) {
+  border: none;
+  padding: 0;
 }
 
 .kamoNav ul li {
@@ -39,12 +68,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 5px;
 }
 
-.kamoNav ul .d-flex {
-  border: 1px solid #ffffff21;
-  padding: 0 20px;
-  border-radius: 7px;
-}
-
 .kamoNav ul .bal-area {
   padding: 10px 0 0;
   font-size: 13px;
@@ -52,18 +75,106 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .kamoNav ul .bal-area span img {
-  padding-right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
 .kamoNav ul .log-btn {
   font-family: 'Satoshi';
-  margin: 15px 0px 15px 20px;
   font-weight: 900;
-  padding: 5px 50px;
+  padding: 8px 0;
   border: 1px solid #F43883;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   color: #F43883;
+  width: 120px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .logo img {
+    height: 34px;
+  }
+  .log-btn {
+    margin-left: 20px !important;
+    width: 50px !important;
+    padding: 5px !important;
+    font-size: 11px !important;
+  }
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+  .kamoNav .nav-item {
+    padding: 10px 14px !important;
+    margin-left: 0px !important;
+  }
+  .kamoNav ul {
+    padding: 0;
+  }
+  .kamoNav ul .bal-area {
+    font-size: 11px;
+    padding: 0 !important;
+  }
+  .kamoNav ul .bal-area li {
+    margin-left: 0px !important;
+  }
+  br {
+    display: none;
+  }
+  .cash-btn button {
+    font-size: 11px !important;
+  }
+  .deposit-content {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mobile {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+  .bal-area {
+    padding: 10px 0;
+    line-height: 20px;
+  }
+  .bal-area p {
+    font-size: 11px;
+  }
+  .deposit-grid {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .bal-area {
+    padding: 5px 10px !important;
+  }
+  .bal-area p {
+    font-size: 11px;
+  }
 }
 
 .kamo-title {
@@ -71,8 +182,17 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
+.kamo-title .title-prize {
+  color: #FFFFFF99;
+  padding-top: 10px;
+}
+
 .kamo-title span {
   color: #F43883;
+}
+
+.kamo-title strong {
+  color: #fff;
 }
 
 .kamo-title .title-tx {
@@ -99,11 +219,17 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px;
 }
 
+.deposit-content .deposit-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .deposit-content .deposit {
   color: #fff;
   padding: 20px;
-  width: 390px;
-  margin: 0 auto;
   background: #ffffff10;
   border-radius: 10px;
 }
@@ -125,6 +251,10 @@ h1, h2, h3, h4, h5, h6, p {
   justify-items: center;
 }
 
+.deposit-content .deposit .nav-tabs .nav-item {
+  width: 100%;
+}
+
 .deposit-content .deposit .nav-tabs .nav-item button {
   font-size: 15px;
   font-weight: 700;
@@ -133,7 +263,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .deposit-content .deposit .nav-tabs .nav-link {
-  padding: 10px 56px;
   color: #fff;
   background: none;
   border: 0;
@@ -142,6 +271,14 @@ h1, h2, h3, h4, h5, h6, p {
 .deposit-content .deposit .nav-tabs .nav-link.active {
   border-bottom: 2px solid #fff;
   color: #fff;
+}
+
+.deposit-content .deposit .tab-content #withdraw .title {
+  padding-top: 10px;
+}
+
+.deposit-content .deposit .tab-content #withdraw hr {
+  margin: 15px 0;
 }
 
 .deposit-content .deposit .tab-content .title {
@@ -161,7 +298,7 @@ h1, h2, h3, h4, h5, h6, p {
 .deposit-content .deposit .tab-content .deposit-from .from-input {
   position: relative;
   background: #ffffff1a;
-  height: 50px;
+  height: 42px;
   border: 1px solid #ffffff2e;
   border-radius: 5px;
 }
@@ -204,6 +341,12 @@ h1, h2, h3, h4, h5, h6, p {
   background: #d9d9d91a;
   color: #fff;
   border: 1px solid #ffffff2e;
+}
+
+.deposit-content .deposit .tab-content .deposit-from .from-input .kda-btn img {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
 }
 
 .deposit-content .deposit .tab-content .deposit-from .from-input .max-btn {
@@ -251,7 +394,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .deposit-content .deposit .tab-content .cash-btn button {
   margin: 5px;
-  padding: 8px 13px;
   background: #ffffff10;
   border: 1px solid #ffffff21;
   border-radius: 5px;
@@ -259,6 +401,13 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
   font-size: 12px;
   color: #ffffff70;
+  width: 65px;
+  height: 35px;
+}
+
+.deposit-content .deposit .tab-content .cash-btn .active {
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .footer-area {
@@ -288,5 +437,50 @@ h1, h2, h3, h4, h5, h6, p {
   background: #55ACEE;
   text-align: center;
   border-radius: 50px;
+}
+
+.deposit-prize {
+  color: #fff;
+  background: #ffffff10;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-prize .prize .prize-btn {
+  background: #D9D9D933;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.total-area .total-prizes {
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  background: #ffffff10;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.total-area .total-prizes .hr {
+  margin: 30px 0;
+}
+
+.total-area .total-prizes h2 {
+  font-size: 20px;
+}
+
+.total-area .total-prizes .count {
+  font-family: 'Satoshi';
+  font-weight: 700;
+  padding-top: 20px;
+  font-size: 32px;
+  color: #f43883;
 }
 /*# sourceMappingURL=style.css.map */
